@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SMS</string>
+    <string name="dialogTitle">Need permission(s)</string>
+    <string name="dialogMessage">Some permissions are required to do the task.</string>
+    <string name="positiveAnswer">OK</string>
+    <string name="negativeAnswer">Cancel</string>
+</resources>
