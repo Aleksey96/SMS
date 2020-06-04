@@ -9,7 +9,7 @@ import com.alexey.sms.MainActivity.Companion.toast
 
 class ManagerPermission(val activity: Activity,val list: List<String>,val code:Int) {
 
-    private fun isPermissionsGranted():Int{
+    /*private fun isPermissionsGranted():Int{
         var count=0
         for (permission in list){
             count=+ContextCompat.checkSelfPermission(activity,permission)
@@ -60,6 +60,6 @@ class ManagerPermission(val activity: Activity,val list: List<String>,val code:I
         }
         if (result == PackageManager.PERMISSION_GRANTED) return true
         return false
-    }
+    }*/
 
 }

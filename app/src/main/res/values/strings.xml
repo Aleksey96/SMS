@@ -4,4 +4,8 @@
     <string name="dialogMessage">Some permissions are required to do the task.</string>
     <string name="positiveAnswer">OK</string>
     <string name="negativeAnswer">Cancel</string>
+    <string name="outcoming_message">Исходящие смс</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

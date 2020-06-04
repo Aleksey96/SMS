@@ -8,12 +8,12 @@ import android.telephony.SmsManager
 import android.util.Log
 
 class SmsSending:BroadcastReceiver() {
-    companion object{
+   /* companion object{
         val resultSms="SMS_RESULT"
-    }
+    }*/
 
     override fun onReceive(context: Context?, intent: Intent?) {
-        when(resultCode){
+        /*when(resultCode){
             Activity.RESULT_OK->{
                 Log.i(resultSms,"SMS_sent")
             }
@@ -26,6 +26,6 @@ class SmsSending:BroadcastReceiver() {
             SmsManager.RESULT_ERROR_NULL_PDU->{
                 Log.i(resultSms,"PDU error")
             }
-        }
+        }*/
     }
 }

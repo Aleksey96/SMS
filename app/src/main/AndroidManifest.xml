@@ -3,13 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.alexey.sms">
 
-    <uses-permission android:name="android.permission.SEND_SMS"/>
-    <uses-permission android:name="android.permission.SMS_FINANCIAL_TRANSACTIONS"/>
-    <uses-permission android:name="android.permission.READ_SMS"/>
-    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.SMS_FINANCIAL_TRANSACTIONS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.BROADCAST_SMS" />
-    <uses-permission android:name="android.permission.WRITE_SMS"/>
-    <uses-permission android:name="android.permission.SEND_RESPOND_VIA_MESSAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.SEND_RESPOND_VIA_MESSAGE" />
 
     <application
         android:allowBackup="true"
@@ -18,6 +18,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".SMSActivity"
+            android:parentActivityName=".HistoryActivity">
+
+        </activity>
+        <activity
+            android:name=".HistoryActivity"
+            android:parentActivityName=".MainActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,22 +33,23 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".SmsDelivering"
+        <receiver
+            android:name=".SmsDelivering"
             android:exported="true"
             android:permission="android.permission.BROADCAST_SMS">
-        <intent-filter
-            android:priority="99">
-            <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
-            <action android:name="android.provider.Telephony.SMS_RECEIVED_ACTION"/>
-        </intent-filter>
+            <intent-filter android:priority="99">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+                <action android:name="android.provider.Telephony.SMS_RECEIVED_ACTION" />
+            </intent-filter>
         </receiver>
-        <receiver android:name=".SmsSending"
+        <receiver
+            android:name=".SmsSending"
             android:exported="true"
             android:permission="android.permission.BROADCAST_SMS">
-        <intent-filter android:priority="100">
-            <action android:name="android.provider.Telephony.SMS_DELIVER"/>
-            <action android:name="android.provider.Telephony.SMS_DELIVER_ACTION"/>
-        </intent-filter>
+            <intent-filter android:priority="100">
+                <action android:name="android.provider.Telephony.SMS_DELIVER" />
+                <action android:name="android.provider.Telephony.SMS_DELIVER_ACTION" />
+            </intent-filter>
         </receiver>
     </application>
 

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SMSActivity">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+    <TextView
+        android:id="@+id/phoneNumber1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="+79276861543"
+        android:textColor="#FD0A0101"
+        android:textSize="32dp" />
+
+    <TextView
+        android:id="@+id/datetime1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:text="2 jule 2020 18:12:120"
+        android:textColor="#FC090000"
+        android:textSize="16dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/messageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear"
+        android:text="messageText"
+        android:textColor="#FC090000"
+        android:textSize="32dp" />
+
+</RelativeLayout>

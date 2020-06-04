@@ -9,13 +9,13 @@ import android.util.Log
 class SmsDelivering:BroadcastReceiver() {
 
     override fun onReceive(context: Context?, intent: Intent?) {
-        when(resultCode){
+      /*  when(resultCode){
             Activity.RESULT_OK->{
                 Log.i(SmsSending.resultSms,"SMS DELIVERED")
             }
             Activity.RESULT_CANCELED->{
                 Log.i(SmsSending.resultSms,"DELIVERY CANCELED")
             }
-        }
+        }*/
     }
 }
