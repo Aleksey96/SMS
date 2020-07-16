@@ -10,8 +10,8 @@ class HistoryActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list)
-        val fragmentManager = PageAdapter(supportFragmentManager)
-        viewpager.adapter = fragmentManager
+        val fragmentManager=PageAdapter(supportFragmentManager)
+        viewpager.adapter=fragmentManager
         tablayout.setupWithViewPager(viewpager)
     }
 }
