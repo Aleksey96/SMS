@@ -24,7 +24,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/linear"
         android:layout_below="@+id/messageText"
         android:layout_alignLeft="@+id/messageText"
@@ -37,4 +37,10 @@
             android:id="@+id/btnSendSMS"
             android:layout_centerHorizontal="true"/>
     </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sms_content"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/linear"/>
 </RelativeLayout>

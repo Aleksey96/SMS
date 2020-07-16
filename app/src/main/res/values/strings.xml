@@ -1,10 +1,12 @@
 <resources>
     <string name="app_name">SMS</string>
-    <string name="dialogTitle">Need permission(s)</string>
-    <string name="dialogMessage">Some permissions are required to do the task.</string>
-    <string name="positiveAnswer">OK</string>
-    <string name="negativeAnswer">Cancel</string>
-    <string name="outcoming_message">Исходящие смс</string>
+    <string name="message_out">Исходящие смс</string>
+    <string name="message_permission">Необходимо выдать все разрешения</string>
+    <string name="warning">Поле(-я) не должно(-ы) быть пустым(-и)</string>
+    <string name="call">Введите номер телефона +7...</string>
+    <string name="going_settings">Предоставьте разрешения в настройках</string>
+    <string name="data_base">База данных недоступна</string>
+    <string name="status_dispatch">Сообщение отправлено!</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

@@ -9,9 +9,10 @@ import java.text.SimpleDateFormat
 import java.util.*
 
 
-class SmsDataBaseHelper(context: Context) :SQLiteOpenHelper(context,name,null, DATABASE_VERSION) {
+class SmsDataBaseHelper(context: Context) //:SQLiteOpenHelper(context,name,null, DATABASE_VERSION) //
+{
 
-   val _context:Context
+  /* val _context:Context
 
     init {
         _context=context
@@ -61,5 +62,5 @@ class SmsDataBaseHelper(context: Context) :SQLiteOpenHelper(context,name,null, D
         }
     }
 
-
+*/
 }

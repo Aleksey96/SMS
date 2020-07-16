@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".CallActivity">
+
+    <TextView
+        android:id="@+id/phoneNumberCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="+79276861543"
+        android:textColor="#FD0A0101"
+        android:textSize="32dp" />
+
+    <TextView
+        android:id="@+id/datetimeCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2 jule 2020 18:12:120"
+        android:layout_weight="1"
+        android:textColor="#FC090000"
+        android:textSize="16dp" />
+
+</LinearLayout>
