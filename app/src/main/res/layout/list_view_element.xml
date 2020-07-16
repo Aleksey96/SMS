@@ -2,27 +2,37 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#77C0A34B"
     android:orientation="horizontal">
+
+<LinearLayout android:id="@+id/linear1"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_weight="1">
 
     <TextView
         android:id="@+id/phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text=""
+        android:textColor="#FD0A0101"
+        android:textSize="30dp"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text=""
-        android:textColor="#FD0A0101"
-        android:textSize="30dp" />
+        android:orientation="vertical">
 
     <TextView
         android:id="@+id/datetime"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="top"
-        android:layout_weight="1"
-        android:gravity="right"
+        android:layout_gravity="center"
         android:text=""
         android:textColor="#FC090000"
-        android:textSize="12dp" />
+        android:textSize="12dp"/>
 
+    </LinearLayout>
 </LinearLayout>
